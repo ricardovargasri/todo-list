@@ -1,8 +1,74 @@
 body {
-  background-color: lightblue;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-div {
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #5cb85c;
   color: white;
-  font-size: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+#todos-container {
+  margin-top: 20px;
+}
+
+.todo-item {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.todo-item h3 {
+  margin: 0 0 10px;
+}
+
+.todo-item p {
+  margin: 5px 0;
+}
+
+.todo-item button {
+  background-color: #d9534f;
+  color: white;
+  margin-right: 5px;
+}
+
+.todo-item button:hover {
+  background-color: #c9302c;
 }

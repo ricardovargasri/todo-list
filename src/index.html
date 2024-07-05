@@ -3,9 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Project</title>
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- El contenido generado por Webpack se insertará aquí -->
+  <div class="container">
+    <h1>Todo List</h1>
+    <form id="todo-form">
+      <input type="text" name="title" placeholder="Title" required>
+      <input type="text" name="description" placeholder="Description" required>
+      <input type="date" name="due-date" required>
+      <select name="priority" required>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+      <button type="submit">Add Todo</button>
+    </form>
+    <div id="todos-container"></div>
+  </div>
+  <script src="bundle.js"></script>
 </body>
 </html>
