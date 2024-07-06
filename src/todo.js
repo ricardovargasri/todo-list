@@ -1,5 +1,5 @@
 export default class Todo {
-  constructor(){
+  constructor(title, description, dueDate, priority){
     this.title = title;          // Título de la tarea
     this.description = description;  // Descripción de la tarea
     this.dueDate = dueDate;      // Fecha de vencimiento de la tarea
